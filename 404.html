@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8"/>
+  <title>АлтТранс — Страницы вёрстки</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <script src="//cdn.jsdelivr.net/npm/details-polyfill@1/index.min.js" async="async"></script>
+  <body class="page">
+    <header class="page__header header header_404"><a class="logotype" href="index.html"><img src="img/logo.svg" alt="" role="presentation"/></a>
+    </header>
+    <div class="page__content">
+      <section class="section section_error">
+        <div class="section__container container"><span class="title title_error" data-code="404"><span>Вы ошиблись адресом</span></span>
+        </div>
+      </section>
+    </div>
+    <footer class="page__footer footer footer_404">
+      <div class="footer__container container">
+        <div class="footer__block"><span class="caption caption_size-s">Можете воспользоваться поиском</span>
+          <form class="search" role="search">
+            <label class="search__field"><input class="search__input" type="search" placeholder="Поиск по сайту" name="search" id="search-input"/>
+              <button class="search__btn" type="submit"><i class="ico">
+                <svg>
+                  <use xlink:href="img/symbols.svg#svg-search"></use>
+                </svg></i>
+              </button>
+            </label>
+          </form>
+        </div>
+        <div class="footer__block"><span class="caption caption_size-s">Или перейти в один из разделов</span>
+          <nav class="nav"><a class="nav__link" href="#navlink1">О предприятии</a><a class="nav__link" href="#navlink2">Трансформаторы</a><a class="nav__link" href="#navlink3">КТП и компоненты</a><a class="nav__link" href="#navlink4">Материалы для скачивания</a><a class="nav__link" href="#navlink5">Контакты</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__footline"><a class="tel" href="tel:73852466714">+7 (3852) 466-714</a>
+        <button class="link link_highlight" data-modal-open="modal-callback">Задать вопрос
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
