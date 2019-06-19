@@ -3,6 +3,7 @@
 <meta charset="UTF-8" />
 <title>АлтТранс — ТМ-25-10(6)/0,4</title>
 <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/tiny-slider.css">
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <script src="//cdn.jsdelivr.net/npm/details-polyfill@1/index.min.js" async="async"></script>
@@ -42,8 +43,7 @@
                         </div>
                     </div>
                     <nav class="nav"><a class="nav__link" href="#navlink1">О предприятии</a><a class="nav__link" href="#navlink2">Трансформаторы</a><a class="nav__link" href="#navlink3">КТП и компоненты</a><a class="nav__link" href="#navlink4">Материалы для скачивания</a>
-                        <a
-                            class="nav__link" href="#navlink5">Контакты</a>
+                        <a class="nav__link" href="#navlink5">Контакты</a>
                     </nav>
                 </div>
             </div>
@@ -95,8 +95,7 @@
                     </div>
                 </div>
                 <nav class="nav"><a class="nav__link" href="#navlink1">О предприятии</a><a class="nav__link" href="#navlink2">Трансформаторы</a><a class="nav__link" href="#navlink3">КТП и компоненты</a><a class="nav__link" href="#navlink4">Материалы для скачивания</a>
-                    <a
-                        class="nav__link" href="#navlink5">Контакты</a>
+                    <a class="nav__link" href="#navlink5">Контакты</a>
                 </nav>
                 <div class="header__drop-foot"><a class="tel" href="tel:73852466714">+7 (3852) 466-714</a>
                     <button class="link link_highlight" data-modal-open="modal-callback">Задать вопрос
@@ -123,37 +122,49 @@
                     <div class="product__section">
                         <div class="product__gallery">
                             <div class="gallery" id="gallery">
-                                <div class="gallery__zoom">
-                                </div>
-                                <div class="slider" data-slider="preview">
-                                    <div class="slider__controls" data-slider-controls="data-slider-controls">
-                                        <button class="slider__arrow slider__arrow_prev">
-                        <svg>
-                          <use xlink:href="img/symbols.svg#svg-arrow"></use>
-                        </svg>
-                      </button>
-                                        <button class="slider__arrow slider__arrow_next">
-                        <svg>
-                          <use xlink:href="img/symbols.svg#svg-arrow"></use>
-                        </svg>
-                      </button>
+                                <div class="gallery-slider" id="gallerySlider">
+                                    <div>
+                                        <div>
+                                            <img src="pictures/gallery1.png" class="gallery-Img" alt="">
+                                        </div>
                                     </div>
-                                    <ul class="slider__preview" data-slider-slides="data-slider-slides">
-                                        <li class="slider__preview-item"><img src="pictures/gallery1.png" />
+                                    <div>
+                                        <div>
+                                            <img src="pictures/gallery2.png" class="gallery-Img" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <img src="pictures/gallery1.png" class="gallery-Img" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <img src="pictures/gallery2.png" class="gallery-Img" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <img src="pictures/gallery1.png" class="gallery-Img" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-tools">
+                                    <ul class="thumbnails" id="customize-thumbnails">
+                                        <li>
+                                            <img src="pictures/gallery1.png" alt="">
                                         </li>
-                                        <li class="slider__preview-item"><img src="pictures/gallery2.png" />
+                                        <li>
+                                            <img src="pictures/gallery2.png" alt="">
                                         </li>
-                                        <li class="slider__preview-item"><img src="pictures/gallery1.png" />
+                                        <li>
+                                            <img src="pictures/gallery1.png" alt="">
                                         </li>
-                                        <li class="slider__preview-item"><img src="pictures/gallery2.png" />
+                                        <li>
+                                            <img src="pictures/gallery2.png" alt="">
                                         </li>
-                                        <li class="slider__preview-item"><img src="pictures/gallery1.png" />
-                                        </li>
-                                        <li class="slider__preview-item"><img src="pictures/gallery2.png" />
-                                        </li>
-                                        <li class="slider__preview-item"><img src="pictures/gallery1.png" />
-                                        </li>
-                                        <li class="slider__preview-item"><img src="pictures/gallery2.png" />
+                                        <li>
+                                            <img src="pictures/gallery1.png" alt="">
                                         </li>
                                     </ul>
                                 </div>
@@ -355,6 +366,14 @@
             </div>
         </section>
     </div>
+
+    <div id="galleryModal">
+        <span id="closeGalleryModal">&times;</span>
+        <div class="gallery-modal__block">
+            <img class="modal-gallery__img" id="imgModal">
+        </div>
+    </div>
+
     <footer class="page__footer footer">
         <div class="footer__main">
             <div class="footer__container container">
@@ -394,6 +413,17 @@
     </footer>
     <script src="js/libs.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script>
+        var slider = tns({
+            container: "#gallerySlider",
+            items: 1,
+            navContainer: '#customize-thumbnails',
+            navAsThumbnails: true,
+            controls: false,
+        });
+    </script>
 </body>
 
 </html>

@@ -170,5 +170,31 @@
     float: left
 }
 
+.thumbnails {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.thumbnails li {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.thumbnails .tns-nav-active {
+    background: none;
+    border-color: #37474f;
+}
+
+.thumbnails li {
+    width: 80px;
+}
+
+.thumbnails img {
+    vertical-align: bottom;
+    height: auto;
+    max-height: 50px;
+}
+
 
 /*# sourceMappingURL=sourcemaps/tiny-slider.css.map */

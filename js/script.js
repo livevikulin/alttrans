@@ -134,7 +134,8 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 });
             });
 
-            gallery.querySelector('.slider__preview-item').click();
+            if (gallery.length > 0)
+                gallery.querySelector('.slider__preview-item').click();
         }
 
         document.querySelectorAll('[data-slider]').forEach(function(slider, i) {
@@ -313,6 +314,15 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         autoplayButtonOutput: false,
         autoplayDirection: "forward"
     });
+
+    var slider = tns({
+        container: "#gallerySlider",
+        items: 1,
+        navContainer: '#customize-thumbnails',
+        navAsThumbnails: true,
+        controls: false,
+    });
+
 })(window);
 
 
