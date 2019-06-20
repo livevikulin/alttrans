@@ -170,35 +170,53 @@
                                     </div>
                                 </div>
                                 <div class="customize-tools">
-                                    <ul class="thumbnails" id="customize-thumbnails">
-                                        <li>
-                                            <img src="pictures/gallery1.png" alt="">
-                                        </li>
-                                        <li>
-                                            <img src="pictures/gallery2.png" alt="">
-                                        </li>
-                                        <li>
-                                            <img src="pictures/gallery1.png" alt="">
-                                        </li>
-                                        <li>
-                                            <img src="pictures/gallery2.png" alt="">
-                                        </li>
-                                        <li>
-                                            <img src="pictures/gallery1.png" alt="">
-                                        </li>
-                                        <li>
-                                            <img src="pictures/gallery2.png" alt="">
-                                        </li>
-                                        <li>
-                                            <img src="pictures/gallery1.png" alt="">
-                                        </li>
-                                        <li>
-                                            <img src="pictures/gallery2.png" alt="">
-                                        </li>
-                                        <li>
-                                            <img src="pictures/gallery1.png" alt="">
-                                        </li>
-                                    </ul>
+                                    <div class="thumbnails" id="customize-thumbnails">
+                                        <div>
+                                            <div class="nav-gallery">
+                                                <img src="pictures/gallery1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="nav-gallery">
+                                                <img src="pictures/gallery2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="nav-gallery">
+                                                <img src="pictures/gallery1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="nav-gallery">
+                                                <img src="pictures/gallery2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="nav-gallery">
+                                                <img src="pictures/gallery1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="nav-gallery">
+                                                <img src="pictures/gallery2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="nav-gallery">
+                                                <img src="pictures/gallery1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="nav-gallery">
+                                                <img src="pictures/gallery2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="nav-gallery">
+                                                <img src="pictures/gallery1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
                                     <ul class="controls" id="customize-controls">
                                         <li class="prev">
                                             <img src="img/angle-left.png" alt="">
@@ -459,6 +477,17 @@
         var slider = tns({
             container: "#gallerySlider",
             items: 1,
+            controlsContainer: "#customize-controls",
+            navContainer: '#customize-thumbnails',
+            navAsThumbnails: true,
+            controls: true,
+        });
+
+        var slider = tns({
+            container: "#customize-thumbnails",
+            items: 5,
+            controls: true,
+            navAsThumbnails: false,
             controlsContainer: "#customize-controls",
             navContainer: '#customize-thumbnails',
             navAsThumbnails: true,
