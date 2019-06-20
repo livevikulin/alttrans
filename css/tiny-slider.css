@@ -173,6 +173,7 @@
 .thumbnails {
     margin: 20px 0;
     text-align: center;
+    padding: 0 40px;
 }
 
 .thumbnails li {
@@ -194,6 +195,41 @@
     vertical-align: bottom;
     height: auto;
     max-height: 50px;
+}
+
+.controls {
+    text-align: center;
+    position: relative;
+}
+
+.controls li {
+    display: block;
+    position: absolute;
+    top: -95px;
+    height: 54px;
+    line-height: 54px;
+    margin-top: -30px;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.controls li img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.controls .prev {
+    left: 0;
+}
+
+.controls .next {
+    right: 0;
+}
+
+.controls li:hover {
+    background: #f2f2f2;
 }
 
 

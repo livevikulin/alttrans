@@ -318,6 +318,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
     var slider = tns({
         container: "#gallerySlider",
         items: 1,
+        controlsContainer: "#customize-controls",
         navContainer: '#customize-thumbnails',
         navAsThumbnails: true,
         controls: false,

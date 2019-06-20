@@ -2373,8 +2373,12 @@ a.file__name:hover {
 }
 
 .gallery-modal__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     max-width: 700px;
+    min-height: 500px;
     margin: auto;
     background: #ffffff;
     -webkit-animation-name: zoom;
@@ -2386,7 +2390,7 @@ a.file__name:hover {
 .modal-gallery__img {
     margin: auto;
     display: block;
-    width: 80%;
+    /* width: 80%; */
     max-width: 700px;
     /* -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
