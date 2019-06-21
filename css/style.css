@@ -1689,6 +1689,14 @@ th {
     background-color: #ffb300;
 }
 
+.slick-disabled {
+    opacity: 0;
+}
+
+.slick-current {
+    opacity: 1 !important;
+}
+
 .numbers {
     display: -webkit-box;
     display: -ms-flexbox;
