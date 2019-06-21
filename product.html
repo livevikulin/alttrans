@@ -415,40 +415,6 @@
     <script src="js/libs.js"></script>
     <script src="js/script.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/gallery.js"></script>
-    <script>
-    
-    $(document).ready(function() {
-
-        $('.gallery-slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.gallery-slider__nav',
-            infinite: false
-        });
-        $('.gallery-slider__nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.gallery-slider',
-            dots: false,
-            centerMode: false,
-            focusOnSelect: true,
-            infinite: false,
-            responsive: [
-                {
-                breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        centerMode: true
-                    }
-                }
-            ]
-        });
-    });
-    
-    </script>
 </body>
 
 </html>

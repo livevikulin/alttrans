@@ -1,5 +1,54 @@
 'use strict';
 
+//Слайдер в карточке с товаром 
+$(document).ready(function() {
+
+    $('.gallery-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.gallery-slider__nav',
+        infinite: false
+    });
+    $('.gallery-slider__nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.gallery-slider',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        infinite: false,
+        responsive: [
+            {
+            breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true
+                }
+            }
+        ]
+    });
+});
+
+
+var galleryModal = document.getElementById('galleryModal')
+var galleryImg = document.querySelectorAll('img.gallery-Img')
+var closeModalGallery = document.getElementById('closeGalleryModal')
+var imgModal = document.getElementById('imgModal')
+
+
+galleryImg.forEach(function(element) {
+    element.addEventListener('click', function(e) {
+        galleryModal.style.display = "block";
+        imgModal.src = this.src;
+    });
+});
+
+closeModalGallery.addEventListener('click', function() {
+    galleryModal.style.display = "none";
+});
+
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 (function(root) {

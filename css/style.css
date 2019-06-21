@@ -1676,6 +1676,7 @@ th {
     left: 0;
     margin-top: -16px;
     background: url('../img/arrow-prev.svg') center no-repeat;
+    z-index: 999;
 }
 
 .slick-next {
