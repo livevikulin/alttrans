@@ -435,9 +435,17 @@
             dots: false,
             centerMode: false,
             focusOnSelect: true,
-            infinite: false
+            infinite: false,
+            responsive: [
+                {
+                breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        centerMode: true
+                    }
+                }
+            ]
         });
-
     });
     
     </script>

@@ -1648,7 +1648,8 @@ th {
 }
 
 .gallery-slider__nav .slick-list {
-    width: 496px !important;
+    width: 100%;
+    max-width: 496px !important;
     margin: auto !important;
     padding: 0 !important;
 }
@@ -2459,6 +2460,10 @@ a.file__name:hover {
 }
 
 .gallery-Img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
     cursor: pointer;
 }
 
@@ -2471,6 +2476,7 @@ a.file__name:hover {
     min-height: 500px;
     margin: auto;
     background: #ffffff;
+    padding: 20px;
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -2480,8 +2486,10 @@ a.file__name:hover {
 .modal-gallery__img {
     margin: auto;
     display: block;
-    /* width: 80%; */
-    max-width: 700px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
     /* -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -5081,6 +5089,11 @@ input[type=number] {
         display: block;
         width: 100%;
         margin: 0 0 24px
+    }
+
+    .gallery-slider__nav .slick-slide {
+        width: 250px !important;
+        margin: 0 11px;
     }
 }
 
