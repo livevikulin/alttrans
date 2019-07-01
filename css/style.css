@@ -1698,6 +1698,19 @@ th {
 .slick-current {
     opacity: 1 !important;
 }
+#mouse-drag .slick-slide,
+#mouse-drag2 .slick-slide {
+
+	opacity: 0.3;
+
+}
+
+#mouse-drag .slick-active,
+#mouse-drag2 .slick-active {
+
+	opacity: 1;
+
+}
 
 .numbers {
     display: -webkit-box;

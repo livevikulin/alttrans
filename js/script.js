@@ -1,6 +1,6 @@
 'use strict';
 
-//Слайдер в карточке с товаром 
+//Настройки слайдера в карточке с товаром 
 $(document).ready(function() {
 
     $('.gallery-slider').slick({
@@ -29,9 +29,33 @@ $(document).ready(function() {
             }
         ]
     });
+    
+    $('#mouse-drag').slick({
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		centerMode: true,
+		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		arrows: false
+	});
+	
+	$('#mouse-drag2').slick({
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		centerMode: true,
+		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		arrows: false,
+	});
 });
 
 
+
+//Открывает модалку при клике на изображение в карточке с товаром
 var galleryModal = document.getElementById('galleryModal')
 var galleryImg = document.querySelectorAll('img.gallery-Img')
 var closeModalGallery = document.getElementById('closeGalleryModal')
@@ -334,35 +358,35 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
     init();
 
-    var slider = tns({
-        container: "#mouse-drag",
-        items: 2,
-        mouseDrag: true,
-        slideBy: 1,
-        swipeAngle: false,
-        speed: 400,
-        nav: false,
-        controls: false,
-        autoplay: true,
-        autoplayButton: false,
-        autoplayButtonOutput: false,
-        autoplayDirection: "backward"
-    });
+    // var slider = tns({
+    //     container: "#mouse-drag",
+    //     items: 2,
+    //     mouseDrag: true,
+    //     slideBy: 1,
+    //     swipeAngle: false,
+    //     speed: 400,
+    //     nav: false,
+    //     controls: false,
+    //     autoplay: true,
+    //     autoplayButton: false,
+    //     autoplayButtonOutput: false,
+    //     autoplayDirection: "backward"
+    // });
 
-    var slider = tns({
-        container: "#mouse-drag2",
-        items: 2,
-        mouseDrag: true,
-        slideBy: 1,
-        swipeAngle: false,
-        speed: 400,
-        nav: false,
-        controls: false,
-        autoplay: true,
-        autoplayButton: false,
-        autoplayButtonOutput: false,
-        autoplayDirection: "forward"
-    });
+    // var slider = tns({
+    //     container: "#mouse-drag2",
+    //     items: 2,
+    //     mouseDrag: true,
+    //     slideBy: 1,
+    //     swipeAngle: false,
+    //     speed: 400,
+    //     nav: false,
+    //     controls: false,
+    //     autoplay: true,
+    //     autoplayButton: false,
+    //     autoplayButtonOutput: false,
+    //     autoplayDirection: "forward"
+    // });
 
     var slider = tns({
         container: "#gallerySlider",
